@@ -1,8 +1,8 @@
 # Leonida Trophy Guide — GTA VI (PS5)
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
-[![Trophies: 55](https://img.shields.io/badge/Trophies-55-blue.svg)](app/data/trophies.json)
-[![Offline](https://img.shields.io/badge/Offline-Yes-green.svg)](app/index.html)
+[![make.fun · gta6-trophy-guide-01](https://make.fun/badge/gta6-trophy-guide-01.svg)](https://make.fun/bounty/gta6-trophy-guide-01?utm_source=github&utm_medium=readme&utm_campaign=gta6-trophy-guide-01)
+[![rank](https://make.fun/badge/gta6-trophy-guide-01/dedenabduloh07-ctrl/gta6-trophy-guide-01/rank.svg)](https://make.fun/bounty/gta6-trophy-guide-01/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=gta6-trophy-guide-01)
+[![reward](https://make.fun/badge/gta6-trophy-guide-01/dedenabduloh07-ctrl/gta6-trophy-guide-01/reward.svg)](https://make.fun/bounty/gta6-trophy-guide-01?utm_source=github&utm_medium=readme&utm_campaign=gta6-trophy-guide-01)
 
 A free, open-source, offline trophy guide and tracker for **Grand Theft Auto VI** on PlayStation 5. No ads, no account, no network — open `app/index.html` and it works.
 
