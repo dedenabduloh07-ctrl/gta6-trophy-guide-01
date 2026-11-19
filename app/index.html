@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Leonida Trophy Guide — GTA VI (PS5)</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+  <div class="brand">
+    <p class="kicker">Grand Theft Auto VI &middot; PlayStation 5</p>
+    <h1>Leonida Trophy Guide</h1>
+    <p class="sub">Every one of the 55 official trophies — what it asks, how to earn it, and what can be missed. Works offline; your progress stays in this browser.</p>
+  </div>
+  <div class="progress-card" id="progressCard" aria-live="polite">
+    <p class="big"><span id="earnedCount">0</span><span class="of"> / 55 earned</span></p>
+    <div class="bar"><div class="fill" id="progressFill" style="width:0%"></div></div>
+    <p class="meta"><span id="gamerscore">0G</span> of 1,000G &middot; <span id="gradeCounts"></span></p>
+    <p class="meta" id="categoryCounts"></p>
+  </div>
+</header>
+
+<nav class="tabs" aria-label="Sections">
+  <button type="button" data-view="tracker" class="active">Tracker</button>
+  <button type="button" data-view="roadmap">Platinum roadmap</button>
+  <button type="button" data-view="missables">Missables</button>
+  <button type="button" data-view="sources">Sources &amp; honesty</button>
+</nav>
+
+<main>
+  <section id="view-tracker" class="view">
+    <div class="controls">
+      <label class="search">Search <input id="q" type="search" placeholder="Trophy name or keyword…" autocomplete="off"></label>
+      <label>Grade
+        <select id="grade">
+          <option value="all">All grades</option>
+          <option value="platinum">Platinum</option>
+          <option value="gold">Gold</option>
+          <option value="silver">Silver</option>
+          <option value="bronze">Bronze</option>
+        </select>
+      </label>
+      <label>Kind
+        <select id="kind">
+          <option value="all">All kinds</option>
+          <option value="story">Story</option>
+          <option value="side">Side</option>
+          <option value="collection">Collection</option>
+          <option value="platinum">Platinum</option>
+        </select>
+      </label>
+      <label>Difficulty
+        <select id="difficulty">
+          <option value="all">Any difficulty</option>
+          <option value="1">1 — easy</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5 — the grind</option>
+        </select>
+      </label>
+      <label>Status
+        <select id="status">
+          <option value="all">All</option>
+          <option value="earned">Earned</option>
+          <option value="remaining">Not earned yet</option>
+          <option value="missable">Missable only</option>
+        </select>
+      </label>
+      <label>Sort
+        <select id="sort">
+          <option value="list">Official list order</option>
+          <option value="rarest">Rarest first</option>
+          <option value="easiest">Easiest first</option>
+          <option value="hardest">Hardest first</option>
+          <option value="az">A–Z</option>
+        </select>
+      </label>
+      <label class="check"><input id="spoilers" type="checkbox"> Hide story spoilers</label>
+    </div>
+    <div class="tracker-grid">
+      <div class="list-wrap">
+        <p class="showing" id="showing"></p>
+        <ul class="trophies" id="trophies"></ul>
+      </div>
+      <aside class="detail" id="detail" aria-live="polite"></aside>
+    </div>
+    <div class="save-row">
+      <button id="export" type="button">Export progress</button>
+      <label class="import">Import progress <input id="import" type="file" accept="application/json"></label>
+      <button id="reset" type="button" class="danger">Reset progress</button>
+      <p class="hint">Progress is saved in this browser only (localStorage). Export keeps a backup file you can import on another machine.</p>
+    </div>
+  </section>
+
+  <section id="view-roadmap" class="view" hidden>
+    <h2>The road to the platinum</h2>
+    <p class="lede">Around 200 hours, difficulty about 4 out of 10. It is long, not hard: no online trophies, no difficulty trophies, no mission medals. The steps below are in the order that wastes the least time.</p>
+    <ol class="roadmap" id="roadmap"></ol>
+  </section>
+
+  <section id="view-missables" class="view" hidden>
+    <h2>What can be missed</h2>
+    <p class="lede">GTA VI has no mission replay and no New Game Plus. Almost everything stays open after the credits — except the two things below.</p>
+    <div class="missables" id="missables"></div>
+    <h3>Save rules that keep one playthrough enough</h3>
+    <ol class="rules">
+      <li><strong>No mission replay, no New Game Plus.</strong> Once a story mission is done you cannot select it again. The game has 15 manual save slots plus one autosave: keep one at the start of each chapter and an untouched one from just before the final mission, and rotate the rest.</li>
+      <li><strong>Do Lucia&rsquo;s balcony meditation in Chapter 1.</strong> After Lucia is home, check the kitchen in the morning (a morning after the mission Down to Earth is the usual time). She heads out to the balcony of Jason&rsquo;s house to meditate. Follow her and accept the optional task. It is gone once Chapter 1 ends.</li>
+      <li><strong>Do Race Against Yago the moment it appears.</strong> This Chapter 3 race in Yago&rsquo;s street racing strand is time-sensitive (hourglass icon) and the strand counts toward Strangers &amp; Freaks. Save first, then race.</li>
+      <li><strong>Never use cheats on your trophy save.</strong> Cheats should switch off both trophies and saving.</li>
+    </ol>
+    <p class="fine">Save rules and the Yago warning come from Output Lag&rsquo;s guide (community guide, not yet checked in the game). Everything outside the story stays available after the credits, including the side-story finales and the 100% checklist.</p>
+  </section>
+
+  <section id="view-sources" class="view" hidden>
+    <h2>Sources &amp; honesty</h2>
+    <div class="sources" id="sources"></div>
+  </section>
+</main>
+
+<footer>
+  <p>Unofficial fan guide. Not affiliated with Rockstar Games, Sony Interactive Entertainment, or PlayStation. Trophy names and descriptions are the official list; guide text is written in our own words. No Rockstar artwork or logos are used. Trophy list verified 19 November 2026.</p>
+</footer>
+
+<script type="module" src="app.js"></script>
+</body>
+</html>
